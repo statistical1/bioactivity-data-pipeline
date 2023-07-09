@@ -1,5 +1,15 @@
 # Bioactivity Data Pipeline
 
+This repository contains the code and configuration for a bioactivity data pipeline, which collects data from EEG and EMG hardware, processes and stores this data both locally and in the AWS cloud, and provides access to the processed data via a secure web-based dashboard.
+
+## Directory Structure
+
+- `hardware-interface/`: Contains the drivers and configurations for the EEG and EMG hardware.
+- `local-server/`: Contains scripts for local data processing, interfacing with the local database, and syncing data to AWS.
+- `aws-cloud/`: Contains scripts and configuration files for data storage (S3), data processing (EMR, Lambda), and machine learning (SageMaker).
+- `web-dashboard/`: Contains scripts for managing the API Gateway, lambda functions for API requests, and the static files for the web dashboard.
+
+
 bioactivity-data-pipeline/  
 |  
 |-- hardware-interface/  
